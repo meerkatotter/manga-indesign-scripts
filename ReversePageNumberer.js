@@ -7,6 +7,7 @@ var prefs = doc.documentPreferences;
 var pageNumberMaster = doc.masterSpreads.itemByName("C-PageNumber");
 var pageNumberLayer = app.activeDocument.layers.itemByName("Page Numbers");
 var startPageNumber = 1;
+var isPad = false;
 
 function getMasterPageItems() {
     var pageItems = pageNumberMaster.allPageItems;
@@ -41,7 +42,13 @@ function main() {
                 pageNumberItem = masterPageNumbers[1];
             }
             newPageNumberItem = pageNumberItem.duplicate(page);
-            pageNumberStr = (bookSize - (page.documentOffset - startPageNumber) - 1).toString();
+            if (isPad) {
+                pageNumberStr = (bookSize - (page.documentOffset - startPageNumber) - 1).toString();
+                pageNumberStr = ("000" + pageNumberStr).slice(-3)
+            }
+            else {
+                pageNumberStr = (bookSize - (page.documentOffset - startPageNumber) - 1).toString();
+            }
             newPageNumberItem.contents = pageNumberStr;
         }
     } catch (err) {
