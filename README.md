@@ -1,6 +1,6 @@
 # Manga InDesign Scripts
 
-#### MakeHorizontalTextFrame
+#### [MakeHorizontalTextFrames](MakeHorizontalTextFrames.js)
 To make horizontal text frames in the same position as existing vertical text frames in an InDesign document
 1. Make sure all vertical text frames have the default text frame object style applied
 2. Edit the text frame object style to open Object Style Options, and set Auto-Sizing in Text Frame Auto Size Options to "Height and Width" with "No Line Breaks" enabled
@@ -10,9 +10,9 @@ To make horizontal text frames in the same position as existing vertical text fr
 3. Edit the text frame object style again to turn off Auto-Sizing in Text Frame Auto Size Options so that the created horizontal text frames are not affected
 4. Run the script and choose the paragraph style to be applied to the created text frames as well as the target layer
 
-Note: You can also adjust the height as well as the width ratio of the created horizontal text frames to the original vertical text frames through the ["Adjustable parameters" section](MakeHorizontalTextFrame.js#L5) of the script
+Note: You can also adjust the height as well as the width ratio of the created horizontal text frames to the original vertical text frames through the ["Adjustable parameters" section](MakeHorizontalTextFrames.js#L4) of the script
 
-#### ReversePageNumberer
+#### [ReversePageNumberer](ReversePageNumberer.js)
 To add page numbers to an InDesign document with a backward left-to-right layout
 1. Create a new parent page, for example: Prefix "C" with the name "PageNumber"
 2. Create a new layer for page numbers, for example: "Page Numbers"

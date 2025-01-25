@@ -1,6 +1,5 @@
 var doc = app.activeDocument;
 var bookSize = doc.pages.count();
-var prefs = doc.documentPreferences;
 
 // Adjustable parameters
 var heightRatio = 1;
