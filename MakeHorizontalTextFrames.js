@@ -55,7 +55,7 @@ function applyParagraphStyleToTextFrame(textFrame, paragraphStyle) {
     }
 }
 
-function makeHorizontalTextFrame(targetStyle, targetLayer) {
+function makeHorizontalTextFrames(targetStyle, targetLayer) {
     try {
         for (var i = 0; i < bookSize; i++) {
             var page = doc.pages[i];
@@ -127,7 +127,7 @@ function main() {
     w.show();
 
     if (targetStyle && targetLayer) {
-        makeHorizontalTextFrame(targetStyle, targetLayer);
+        makeHorizontalTextFrames(targetStyle, targetLayer);
     }
 }
 
