@@ -24,3 +24,7 @@ Note: You can also adjust the page number layer, parent names, starting page num
 
 #### [ReversePageOrder](ReversePageOrder.js)
 To change an InDesign document from a right-to-left layout to a backward left-to-right layout or vice versa
+
+#### [SFXCounter](SFXCounter.js)
+To count the number of objects in the SFX layer of an InDesign document (assuming all SFXs are in a separate layer)
+Note: You can also adjust the layer name through the ["Adjustable parameters" section](SFXCounter.js#L2) of the script
