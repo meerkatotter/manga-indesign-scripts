@@ -21,3 +21,6 @@ To add page numbers to an InDesign document with a backward left-to-right layout
     - You can also select individual pages through the pages panel by double-clicking a page then then running the script
 
 Note: You can also adjust the page number layer, parent names, starting page number, and the padding option through the ["Adjustable parameters" section](ReversePageNumberer.js#L6) of the script
+
+#### [ReversePageOrder](ReversePageOrder.js)
+To change an InDesign document from a right-to-left layout to a backward left-to-right layout or vice versa
