@@ -25,6 +25,24 @@ Note: You can also adjust the page number layer, parent names, starting page num
 #### [ReversePageOrder](ReversePageOrder.js)
 To change an InDesign document from a right-to-left layout to a backward left-to-right layout or vice versa
 
+#### [ReversePageRenumberer](ReversePageRenumberer.js)
+To renumber all page numbers in an InDesign document with a backward left-to-right layout after the addition or removal of pages (assuming all page numbers are in a separate layer)
+Note: You can also adjust the page number layer, starting page number, and the padding option through the ["Adjustable parameters" section](ReversePageRenumberer.js#L5) of the script
+
+#### [ReversePageRepositionNumber](ReversePageRepositionNumber.js)
+To reposition all page numbers in an InDesign document with a backward left-to-right layout (assuming all page numbers are in a separate layer)
+1. Create a new parent page, for example: Prefix "C" with the name "PageNumber"
+2. In the page number layer, insert or adjust the text frames on the left and right pages with your page number's preferred position
+Note: You can also adjust the page number layer and parent name through the ["Adjustable parameters" section](ReversePageRepositionNumber.js#L5) of the script
+
+#### [RoundGraphicsPercentage](RoundGraphicsPercentage.js)
+To round the scale of all images in the art layer on an InDesign document to the nearest number of decimal places
+Note: You can also adjust the art layer, starting page, ending page, and number of decimal places through the ["Adjustable parameters" section](RoundGraphicsPercentage.js#L6) of the script
+
+#### [SetGraphicsPercentage](SetGraphicsPercentage.js)
+To set the scale of all images in the art layer on an InDesign document to a certain percentage
+Note: You can also adjust the art layer, starting page, ending page, and image scale through the ["Adjustable parameters" section](SetGraphicsPercentage.js#L6) of the script
+
 #### [SFXCounter](SFXCounter.js)
 To count the number of objects in the SFX layer of an InDesign document (assuming all SFXs are in a separate layer)
 Note: You can also adjust the layer name through the ["Adjustable parameters" section](SFXCounter.js#L2) of the script
